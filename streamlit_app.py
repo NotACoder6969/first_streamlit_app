@@ -1,6 +1,7 @@
 import pandas
 import streamlit
 import requests
+import json
 import snowflake.connector
 from urllib.error import URLError
 
@@ -30,7 +31,7 @@ streamlit.dataframe(my_fruit_list)
 
 #Function create
 def get_fruityvice_data(this_fruit_choice):
-  fruityvice_response=requests.get("https://fruityvice.come/api/fruit/" + this_fruit_choice)
+  fruityvice_response=requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
   fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())
   streamlit.dataframe(fruityvice_normalized)
 
