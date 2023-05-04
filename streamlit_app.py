@@ -45,7 +45,7 @@ try:
     streamlit.error('please select a fruit plox')
   else:
     back_from_function=get_fruityvice_data(fruit_choice)
-    stramlit.dataframe(back_from_function)
+    streamlit.dataframe(back_from_function)
     
     
 except URLError as e:
