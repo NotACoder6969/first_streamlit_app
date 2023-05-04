@@ -53,11 +53,6 @@ except URLError as e:
     
 
 
-# Takes the json version of the data, normalize it/make it look nice
-fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-# write your own comment - what does this do?
-streamlit.dataframe(fruityvice_normalized)
-
 
 #Snowflake connector part
 my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
