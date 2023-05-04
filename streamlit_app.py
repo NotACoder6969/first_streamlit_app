@@ -1,6 +1,6 @@
 
 import pandas
-import request
+import requests
 import snowflake.connector
 from urlib.error import URLError
 
