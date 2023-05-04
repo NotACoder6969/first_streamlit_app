@@ -47,8 +47,8 @@ try:
     stramlit.dataframe(back_from_function)
     
     
-#except URLError as e:
-#  streamlit.error()
+except URLError as e:
+  streamlit.error()
     
 fruit_choice = streamlit.text_input('What fruit would you like information about?','Kiwi')
 streamlit.write('The user entered ', fruit_choice)
