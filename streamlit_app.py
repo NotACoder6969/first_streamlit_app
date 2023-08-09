@@ -161,9 +161,10 @@ with tab1:
           elif history_level=="Long-Standing Customer": args[3] = 2
 
           total_revenue = get_total_revenue_of_cluster(*args)
-          if total_reveue == 0.0:
+          
+          if total_reveue == 0:
                st.write("There is no records of these customers from these clusters")
-          elif total_reveue != 0.0:
+          elif total_reveue != 0:
                card(title=str(total_revenue), text='Total Sales Revenue Generated')
                # st.metric("Total Sales Revenue",total_revenue)
      
