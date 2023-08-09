@@ -163,7 +163,7 @@ with tab1:
           total_revenue = get_total_revenue_of_cluster(*args)
           
           if total_revenue == 0:
-               st.write("There is no records of these customers from these clusters")
+               st.write("There are no existing customer records from these clusters")
           elif total_revenue != 0:
                card(title=str(total_revenue), text='Total Sales Revenue Generated')
                # st.metric("Total Sales Revenue",total_revenue)
