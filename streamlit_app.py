@@ -70,7 +70,7 @@ def tab1_predict(city,sales_level,frequency_level,history_level):
      df = pd.read_csv('double.csv')
 
 def get_bar_chart_df(city, frequency_level, sales_level, history_level):
-    df = pd.read_csv('2021.csv')
+    df = pd.read_csv('double.csv')
                      
     df = df[df['CITY']==city]
     df = df[df['frequency_cluster']==frequency_level]
@@ -83,7 +83,7 @@ def get_bar_chart_df(city, frequency_level, sales_level, history_level):
     return menu.iloc[[0,1,2], :], menu.iloc[[-3,-2,-1],:]
 
 def get_total_revenue_of_cluster(city, frequency_level, sales_level, history_level):
-    df = pd.read_csv('2021.csv')
+    df = pd.read_csv('double.csv')
     df = df[df['CITY']==city]
     df = df[df['frequency_cluster']==frequency_level]
     df = df[df['sale_cluster']==sales_level]
