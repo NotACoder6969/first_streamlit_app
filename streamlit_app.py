@@ -70,7 +70,7 @@ def tab1_predict(city,sales_level,frequency_level,history_level):
      df = pd.read_csv('2021_wins.csv')
 
 def get_bar_chart_df(city, frequency_level, sales_level, history_level):
-    df = pd.read_csv('2021_wins.csv')
+    df = pd.read_csv('2021.csv')
                      
     df = df[df['CITY']==city]
     df = df[df['frequency_cluster']==frequency_level]
