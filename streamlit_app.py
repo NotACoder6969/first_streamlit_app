@@ -189,9 +189,7 @@ with tab1:
           
           if churn_prediction == 0:  # Not churned
                st.write("##### Since the customers in this cluster are predicted to stay,\n ##### Here are more strategies to continue to entice these customers to buy more!")
-               st.write(f"1. The top 3 most unpopular food menu are **{top_menu_types_str}**. Although these menu types are doing decent, 
-               marketing strategies such as cross-selling could be done to increase sales revenue. 
-               Such examples could be bundle deals to help promote more of these Customers to buy the items from these menu")
+               st.write(f"1. The top 3 most unpopular food menu are **{top_menu_types_str}**. Although these menu types are doing decent, marketing strategies such as cross-selling could be done to increase sales revenue. Such examples could be bundle deals to help promote more of these Customers to buy the items from these menu.")
                st.write(f"2. For the top 3 popular items, customers' favorite food menus are **{bottom_menu_types_str}**. "
              "Promotional strategies such as giving discounts and vouchers could incentivize them to buy more of these items, which might increase overall sales!")
           else:  # Churned
