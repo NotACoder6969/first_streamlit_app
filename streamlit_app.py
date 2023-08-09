@@ -170,7 +170,7 @@ with tab1:
           st.subheader("Top 3 Popular Menu")
           st.bar_chart(get_bar_chart_df(*args)[1], x='MENU_TYPE', y='QTY')
 
-          top_menu, bottom_menu = get_bar_chart_df(*args)
+          bottom_menu, top_menu = get_bar_chart_df(*args)
           full_menu_data = get_bar_chart_df(*args)[0]
 
     # Extract the top and bottom 3 menu types
