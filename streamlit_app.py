@@ -283,7 +283,7 @@ with tab1:
           
           before = before['ORDER_AMOUNT'].sum()
           st.write('Before Marketing Sales Generated')
-          st.write("The total Sales the year before marketing strategies is {before})
+          st.write("The total Sales the year before marketing strategies is {before}")
      
           after = pd.read_csv('after.csv')
           after = after[after['CITY']==city]
@@ -293,7 +293,7 @@ with tab1:
           
           after = after['ORDER_AMOUNT'].sum()
           st.write('After Marketing Sales Generated')
-          st.write("The total Sales the year before marketing strategies is {after})
+          st.write("The total Sales the year before marketing strategies is {after}")
 
 
 
