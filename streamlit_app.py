@@ -176,7 +176,7 @@ with tab1:
                     st.metric(card_title,Improve_revenue,improvement)
                elif city=="San Mateo":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
-                    Improve_revenue=(total_revenue-475309.4)
+                    Improve_revenue=(total_revenue-317835.7)
                     improvement=(total_revenue/Improve_revenue)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
@@ -185,7 +185,7 @@ with tab1:
                     st.metric(card_title,Improve_revenue,improvement)
                elif city=="Boston":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
-                    Improve_revenue=(total_revenue-475309.4)
+                    Improve_revenue=(total_revenue-403487.5)
                     improvement=(total_revenue/Improve_revenue)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
@@ -194,7 +194,7 @@ with tab1:
                     st.metric(card_title,Improve_revenue,improvement)
                elif city=="Seattle":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
-                    Improve_revenue=(total_revenue-475309.4)
+                    Improve_revenue=(total_revenue-353532.5)
                     improvement=(total_revenue/Improve_revenue)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
@@ -203,7 +203,7 @@ with tab1:
                     st.metric(card_title,Improve_revenue,improvement)
                elif city=="Denver":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
-                    Improve_revenue=(total_revenue-475309.4)
+                    Improve_revenue=(total_revenue-525201.6)
                     improvement=(total_revenue/Improve_revenue)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
