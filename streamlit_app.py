@@ -297,7 +297,7 @@ with tab1:
           st.write(after.head(10).sort_values(by='ORDER_AMOUNT'))
           st.write(f"The total Sales the year after marketing strategies is implemented is {after_dataframe}")
 
-          st.write(f'percentage increase = {(after-before)/before * 100}%')
+          st.write(f'percentage increase = {(after_dataframe-before_dataframe)/before_dataframe * 100}%')
 
 
 
