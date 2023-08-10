@@ -297,7 +297,10 @@ with tab1:
           st.write(before.head(10).sort_values(by='ORDER_AMOUNT', ascending=False))
           st.write(f"The total Sales the year after marketing strategies is implemented is $**{after_dataframe}**")
 
-          st.write(f'Overall Y0Y percentage increase = {(after_dataframe-before_dataframe)/before_dataframe * 100}%')
+          percentage_increase = ((after_dataframe - before_dataframe) / before_dataframe) * 100
+          rounded_percentage = round(percentage_increase, 2)
+          st.write(f'Overall Y0Y percentage increase = {rounded_percentage}%')
+
 
 
 
