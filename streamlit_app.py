@@ -93,7 +93,7 @@ def get_total_revenue_of_cluster(city, frequency_level, sales_level, history_lev
 
 with tab1:
 
-     st.title('Churn Prediction And Measures')
+     st.title('💣💣Churn Prediction And Measures💣💣')
      st.markdown('________________________________________________')
 
 #      df_cleaned = dataset.loc[:, ['CITY', 'REGION', 'MENU_TYPE',
@@ -307,7 +307,7 @@ with tab1:
           st.write(f'###### Sales After Marketing strategies have been implemented {after_dataframe}')
           st.write(f'###### Overall Y0Y percentage increase = {rounded_percentage}%')
           if rounded_percentage>=25:
-               st.write("###### Congratulation! Marketing Strategies was a success and High-Level Goals have been achieved!🎉🎉")
+               st.write("###### Congratulation! Marketing Strategies was a success and High-Level Goals have been achieved!🎯🎉")
 
 
 
