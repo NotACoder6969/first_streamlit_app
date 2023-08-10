@@ -93,7 +93,7 @@ def get_total_revenue_of_cluster(city, frequency_level, sales_level, history_lev
 
 with tab1:
 
-     st.title('💣💣Churn Prediction And Measures💣💣')
+     st.title('💣Churn Prediction And Measures💣')
      st.markdown('________________________________________________')
 
 #      df_cleaned = dataset.loc[:, ['CITY', 'REGION', 'MENU_TYPE',
