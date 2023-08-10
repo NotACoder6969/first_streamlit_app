@@ -177,7 +177,6 @@ with tab1:
 
                elif city!="New York City":
                     print("GAY")
-               card(title=str(total_revenue), text='Total Sales Revenue Generated')
 
           
                print(get_bar_chart_df(*args), args)
