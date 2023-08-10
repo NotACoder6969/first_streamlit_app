@@ -282,9 +282,9 @@ with tab1:
           before = before[before['Customer_age_cluster']==customer_age_cluster]
           
           before_dataframe = before['ORDER_AMOUNT'].sum()
-          st.write('### Before Marketing Sales Generated')
+          st.write('### Before Marketing Sales strats have been implemented')
           st.write(before.head(10).sort_values(by='ORDER_AMOUNT'))
-          st.write(f"The total Sales the year before marketing strategies is {before_dataframe}")
+          st.write(f"The total Sales the year before marketing strategies is **${before_dataframe}"**)
      
           after = pd.read_csv('after.csv')
           after = after[after['CITY']==city]
@@ -293,9 +293,9 @@ with tab1:
           after = after[after['Customer_age_cluster']==customer_age_cluster]
           
           after_dataframe = after['ORDER_AMOUNT'].sum()
-          st.write('After Marketing Sales Generated')
+          st.write('### After Marketing Sales strategies have been implemented')
           st.write(after.head(10).sort_values(by='ORDER_AMOUNT'))
-          st.write(f"The total Sales the year after marketing strategies is implemented is {after_dataframe}")
+          st.write(f"The total Sales the year after marketing strategies is implemented is **${after_dataframe}**")
 
           st.write(f'percentage increase = {(after_dataframe-before_dataframe)/before_dataframe * 100}%')
 
