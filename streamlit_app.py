@@ -295,11 +295,17 @@ with tab1:
           after_dataframe = after['ORDER_AMOUNT'].sum()
           st.write('### After Marketing Sales strategies have been implemented')
           st.write(before.head(10).sort_values(by='ORDER_AMOUNT', ascending=False))
-          st.write(f"The total Sales the year after marketing strategies is implemented is $**{after_dataframe}**")
+          st.write('### Before Marketing Sales strats have been implemented')
 
           percentage_increase = ((after_dataframe - before_dataframe) / before_dataframe) * 100
           rounded_percentage = round(percentage_increase, 2)
           st.write(f'Overall Y0Y percentage increase = {rounded_percentage}%')
+
+
+          st.write('### In Conclusion')
+          st.write(f'##### Sales Before Marketing strats have been implemented {before_dataframe}')
+          st.write(f'##### Sales After Marketing strats have been implemented {after_dataframe}')
+          st.write(f'##### Overall Y0Y percentage increase = {rounded_percentage}%')
 
 
 
