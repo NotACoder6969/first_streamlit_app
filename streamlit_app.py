@@ -278,11 +278,11 @@ with tab1:
           # after = after['ORDER_AMOUNT'].sum()
           st.write("after")
      
-     if button_return_value:
-     st.write('Before Marketing Sales Generated')
+     # if button_return_value:
+     # st.write('Before Marketing Sales Generated')
      
      
-     st.write('After Marketing Sales Generated')
+     # st.write('After Marketing Sales Generated')
 
 
 
