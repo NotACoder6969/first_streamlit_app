@@ -258,24 +258,24 @@ with tab1:
                     st.write(f"2. For the top 3 popular items, customers' favorite food menus are **{top_menu_types_str}**. "
                     "Promotional strategies such as giving discounts and vouchers could incentivize them to buy more of these items.")
 
-          before = pd.read_csv('before.csv')
-          before = before[before['YEAR_OF_ORDER']==2021]
+          # before = pd.read_csv('before.csv')
+          # before = before[before['YEAR_OF_ORDER']==2021]
           
-          before = before[before['CITY']==city]
-          before = before[before['sale_cluster']==sale_cluster]
-          before = before[before['frequency_cluster']==frequency_cluster]
-          before = before[before['Customer_age_cluster']==customer_age_cluster]
+          # before = before[before['CITY']==city]
+          # before = before[before['sale_cluster']==sale_cluster]
+          # before = before[before['frequency_cluster']==frequency_cluster]
+          # before = before[before['Customer_age_cluster']==customer_age_cluster]
           
-          before = before['ORDER_AMOUNT'].sum()
+          # before = before['ORDER_AMOUNT'].sum()
           st.write("before")
      
-          after = pd.read_csv('after.csv')
-          after = after[after['CITY']==city]
-          after = after[after['sale_cluster']==sale_cluster]
-          after = after[after['frequency_cluster']==frequency_cluster]
-          after = after[after['Customer_age_cluster']==customer_age_cluster]
+          # after = pd.read_csv('after.csv')
+          # after = after[after['CITY']==city]
+          # after = after[after['sale_cluster']==sale_cluster]
+          # after = after[after['frequency_cluster']==frequency_cluster]
+          # after = after[after['Customer_age_cluster']==customer_age_cluster]
           
-          after = after['ORDER_AMOUNT'].sum()
+          # after = after['ORDER_AMOUNT'].sum()
           st.write("after")
      
      if button_return_value:
