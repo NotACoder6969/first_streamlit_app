@@ -282,9 +282,10 @@ with tab1:
           before = before[before['Customer_age_cluster']==customer_age_cluster]
           
           before_dataframe = before['ORDER_AMOUNT'].sum()
+          rounded_before_dataframe = round(before_dataframe, 2)
           st.write('### Before Marketing Sales strats have been implemented')
           st.write(before.head(10).sort_values(by='ORDER_AMOUNT', ascending=False))
-          st.write(f"The total Sales the year before marketing strategies is $**{before_dataframe}**")
+          st.write(f"The total Sales the year before marketing strategies is $**{rounded_before_dataframe}**")
      
           after = pd.read_csv('after.csv')
           after = after[after['CITY']==city]
@@ -293,18 +294,20 @@ with tab1:
           after = after[after['Customer_age_cluster']==customer_age_cluster]
           
           after_dataframe = after['ORDER_AMOUNT'].sum()
+          rounded_after_dataframe = round(after_dataframe, 2)
+          
           st.write('### After Marketing Sales strategies have been implemented')
           st.write(before.head(10).sort_values(by='ORDER_AMOUNT', ascending=False))
-          st.write('### Before Marketing strategies have been implemented')
+          st.write(f"The Predicted Total Sales the year after marketing strategies is $**{rounded_after_dataframe}**")
 
-          percentage_increase = ((after_dataframe - before_dataframe) / before_dataframe) * 100
+          percentage_increase = ((rounded_after_dataframe - rounded_before_dataframe) / rounded_before_dataframe) * 100
           rounded_percentage = round(percentage_increase, 2)
           st.write(f'Overall Y0Y percentage increase = {rounded_percentage}%')
 
 
           st.write('### In Conclusion')
-          st.write(f'###### Sales Before Marketing strategies have been implemented ${before_dataframe}')
-          st.write(f'###### Sales After Marketing strategies have been implemented ${after_dataframe}')
+          st.write(f'###### Sales Before Marketing strategies have been implemented ${rounded_before_dataframe}')
+          st.write(f'###### Sales After Marketing strategies have been implemented ${rounded_after_dataframe}')
           st.write(f'###### Overall Y0Y percentage increase = {rounded_percentage}%')
           if rounded_percentage>=25:
                st.write("###### Congratulation! Marketing Strategies was a success and High-Level Goals have been achieved!🎯🎉")
