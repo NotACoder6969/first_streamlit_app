@@ -303,9 +303,11 @@ with tab1:
 
 
           st.write('### In Conclusion')
-          st.write(f'##### Sales Before Marketing strats have been implemented {before_dataframe}')
-          st.write(f'##### Sales After Marketing strats have been implemented {after_dataframe}')
-          st.write(f'##### Overall Y0Y percentage increase = {rounded_percentage}%')
+          st.write(f'###### Sales Before Marketing strats have been implemented {before_dataframe}')
+          st.write(f'###### Sales After Marketing strats have been implemented {after_dataframe}')
+          st.write(f'###### Overall Y0Y percentage increase = {rounded_percentage}%')
+          if rounded_percentage>=25:
+               st.write("Congratulation! Marketing Strategies was a success and High-Level Goals have been achieved!"🎉🎉)
 
 
 
