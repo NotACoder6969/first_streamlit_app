@@ -168,7 +168,7 @@ with tab1:
                if city=="New York City":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     Improve_revenue=(total_revenue-475309.4)
-                    improvement=(total_revenue/Improve_revenue)
+                    improvement=round(total_revenue / Improve_revenue, 2)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
                     else:
@@ -177,7 +177,7 @@ with tab1:
                elif city=="San Mateo":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     Improve_revenue=(total_revenue-317835.7)
-                    improvement=(total_revenue/Improve_revenue)
+                    improvement=round(total_revenue / Improve_revenue, 2)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
                     else:
@@ -186,7 +186,7 @@ with tab1:
                elif city=="Boston":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     Improve_revenue=(total_revenue-403487.5)
-                    improvement=(total_revenue/Improve_revenue)
+                    improvement=round(total_revenue / Improve_revenue, 2)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
                     else:
@@ -195,7 +195,7 @@ with tab1:
                elif city=="Seattle":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     Improve_revenue=(total_revenue-353532.5)
-                    improvement=(total_revenue/Improve_revenue)
+                    improvement=round(total_revenue / Improve_revenue, 2)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
                     else:
@@ -204,7 +204,7 @@ with tab1:
                elif city=="Denver":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     Improve_revenue=(total_revenue-525201.6)
-                    improvement=(total_revenue/Improve_revenue)
+                    improvement=round(total_revenue / Improve_revenue, 2)
                     if Improve_revenue < 0:
                          card_title = 'Total Sales Revenue Loss'
                     else:
