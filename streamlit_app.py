@@ -167,9 +167,9 @@ with tab1:
           elif total_revenue != 0:
                if city=="New York City":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
-                    Improve_revenue=(total_revenue-475309.4)
+                    Improve_revenue=(250 000-475309.4)
                     if Improve_revenue < 0:
-                         improvement=(((round(total_revenue / 475309.4, 2)))*10)
+                         improvement=(((round(250 000 / 475309.4, 2))))
                          card_title = 'Total Sales Revenue Loss'
                     else:
                          improvement=(((round(total_revenue / 475309.4, 2))-1)*100)+("%")
