@@ -282,7 +282,7 @@ with tab1:
           before = before[before['Customer_age_cluster']==customer_age_cluster]
           
           before = before['ORDER_AMOUNT'].sum()
-          st.('Before Marketing Sales Generated')
+          st.write('Before Marketing Sales Generated')
           st.write("The total Sales the year before marketing strategies is {before})
      
           after = pd.read_csv('after.csv')
