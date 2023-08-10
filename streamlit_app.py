@@ -281,9 +281,10 @@ with tab1:
           before = before[before['frequency_cluster']==frequency_cluster]
           before = before[before['Customer_age_cluster']==customer_age_cluster]
           
-          before = before['ORDER_AMOUNT'].sum()
+          before_dataframe = before['ORDER_AMOUNT'].sum()
           st.write('Before Marketing Sales Generated')
-          st.write(f"The total Sales the year before marketing strategies is {before}")
+          st.write(before.head(10))
+          st.write(f"The total Sales the year before marketing strategies is {before_dataframe}")
      
           after = pd.read_csv('after.csv')
           after = after[after['CITY']==city]
@@ -291,9 +292,9 @@ with tab1:
           after = after[after['frequency_cluster']==frequency_cluster]
           after = after[after['Customer_age_cluster']==customer_age_cluster]
           
-          after = after['ORDER_AMOUNT'].sum()
+          after_dataframe = after['ORDER_AMOUNT'].sum()
           st.write('After Marketing Sales Generated')
-          st.write(f"The total Sales the year before marketing strategies is {after}")
+          st.write(f"The total Sales the year after marketing strategies is implemented is {after_dataframe}")
 
 
 
