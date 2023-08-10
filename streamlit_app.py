@@ -259,7 +259,6 @@ with tab1:
                     "Promotional strategies such as giving discounts and vouchers could incentivize them to buy more of these items.")
 
           before = pd.read_csv('before.csv')
-          before = before[before['YEAR_OF_ORDER']==2021]
           
           before = before[before['CITY']==city]
           before = before[before['sale_cluster']==sale_cluster]
