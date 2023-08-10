@@ -290,7 +290,7 @@ with tab1:
           after = after[after['frequency_cluster']==frequency_cluster]
           after = after[after['Customer_age_cluster']==customer_age_cluster]
           
-          # after = after['ORDER_AMOUNT'].sum()
+          after = after['ORDER_AMOUNT'].sum()
           st.write(after)
           
           st.write('Before Marketing Sales Generated')
