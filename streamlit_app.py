@@ -172,7 +172,7 @@ with tab1:
                          improvement=((round(total_revenue/ 475309.4, 2))-1)*100
                          card_title = 'Total Sales Revenue Loss'
                     else:
-                         improvement=(1-(round(total_revenue / 475309.4, 2)))*100
+                         improvement=1-(round(total_revenue / 475309.4, 2))
                          card_title = 'Total Sales Revenue Gain'
                     st.metric(card_title,Improve_revenue,improvement)
                elif city=="San Mateo":
