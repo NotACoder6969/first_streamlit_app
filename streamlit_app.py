@@ -170,33 +170,33 @@ with tab1:
                     Improve_revenue=(total_revenue-475309.4)
                     if Improve_revenue < 0:
                          improvement=((round(total_revenue/ 475309.4, 2))-1)*100
-                         card_title = 'Total Sales Revenue Loss'
+                         card_title = 'Revenue % Falling short from treshold'
                          st.metric(card_title,Improve_revenue,improvement)
                     else:
                          improvement=((round(total_revenue / 475309.4, 2))-1)*100
-                         card_title = 'Total Sales Revenue Gain'
+                         card_title = 'Sales Revenue above Threshold %'
                          st.metric(card_title,Improve_revenue,improvement)
                elif city=="San Mateo":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     Improve_revenue=(total_revenue-317835.7)
                     if Improve_revenue < 0:
                          improvement=((round(total_revenue/ 317835.7, 2))-1)*100
-                         card_title = 'Total Sales Revenue Loss'
+                         card_title = 'Revenue % Falling short from treshold'
                          st.metric(card_title,Improve_revenue,improvement)
                     else:
                          improvement=((round(total_revenue / 317835.7, 2))-1)*100
-                         card_title = 'Total Sales Revenue Gain'
+                         card_title = 'Sales Revenue above Threshold %'
                          st.metric(card_title,Improve_revenue,improvement)
                elif city=="Boston":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     Improve_revenue=(total_revenue-403487.5)
                     if Improve_revenue < 0:
                          improvement=((round(total_revenue/ 403487.5, 2))-1)*100
-                         card_title = 'Total Sales Revenue Loss'
+                         card_title = 'Revenue % Falling short from treshold'
                          st.metric(card_title,Improve_revenue,improvement)
                     else:
                          improvement=((round(total_revenue / 403487.5, 2))-1)*100
-                         card_title = 'Total Sales Revenue Gain'
+                         card_title = 'Total Sales Revenue above Threshold %'
                          st.metric(card_title,Improve_revenue,improvement)
                     
                elif city=="Seattle":
@@ -205,11 +205,11 @@ with tab1:
                     Improve_revenue=(total_revenue-353532.5)
                     if Improve_revenue < 0:
                          improvement=((round(total_revenue/ 353532.5, 2))-1)*100
-                         card_title = 'Total Sales Revenue Loss'
+                         card_title = 'Revenue % Falling short from treshold'
                          st.metric(card_title,Improve_revenue,improvement)
                     else:
                          improvement=((round(total_revenue / 353532.5, 2))-1)*100
-                         card_title = 'Total Sales Revenue Gain'
+                         card_title = 'Sales Revenue above Threshold %'
                          st.metric(card_title,Improve_revenue,improvement)
 
                     
@@ -218,11 +218,11 @@ with tab1:
                     Improve_revenue=(total_revenue-525201.6)
                     if Improve_revenue < 0:
                          improvement=((round(total_revenue/ 525201.6, 2))-1)*100
-                         card_title = 'Total Sales Revenue Loss'
+                         card_title = 'Revenue % Falling short from treshold'
                          st.metric(card_title,Improve_revenue,improvement)
                     else:
                          improvement=((round(total_revenue / 525201.6, 2))-1)*100
-                         card_title = 'Total Sales Revenue Gain'
+                         card_title = 'Sales Revenue above Threshold %'
                          st.metric(card_title,Improve_revenue,improvement)
                print(get_bar_chart_df(*args), args)
                st.subheader("Bottom 3 Popular Menu")
