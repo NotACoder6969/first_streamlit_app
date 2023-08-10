@@ -267,7 +267,7 @@ with tab1:
           before = before[before['Customer_age_cluster']==customer_age_cluster]
           
           before = before['ORDER_AMOUNT'].sum()
-          st.write(before)
+          st.write("before")
      
           after = pd.read_csv('after.csv')
           after = after[after['CITY']==city]
@@ -276,7 +276,7 @@ with tab1:
           after = after[after['Customer_age_cluster']==customer_age_cluster]
           
           after = after['ORDER_AMOUNT'].sum()
-          st.write(after)
+          st.write("after")
      
      if button_return_value:
      st.write('Before Marketing Sales Generated')
