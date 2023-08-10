@@ -174,11 +174,8 @@ with tab1:
                     else:
                          card_title = 'Total Sales Revenue Gain'
                     st.metric(card_title,Improve_revenue,improvement)
-
-               elif city!="New York City":
+               else:
                     print("GAY")
-
-          
                print(get_bar_chart_df(*args), args)
                st.subheader("Bottom 3 Popular Menu")
                st.bar_chart(get_bar_chart_df(*args)[0], x='MENU_TYPE', y='QTY')
