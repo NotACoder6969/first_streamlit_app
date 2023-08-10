@@ -258,6 +258,22 @@ with tab1:
                     st.write(f"2. For the top 3 popular items, customers' favorite food menus are **{top_menu_types_str}**. "
                     "Promotional strategies such as giving discounts and vouchers could incentivize them to buy more of these items.")
 
+          args = [city, 0, 0, 0]
+
+          if frequency_level=="Low-Frequency": args[1] = 0
+          elif frequency_level=="Medium-Frequency": args[1] = 2
+          elif frequency_level=="High-Frequency": args[1] = 1
+
+          if sales_level=="Low-Spending": args[2] = 1
+          elif sales_level=="Average-Spending":  args[2] = 2
+          elif sales_level=="High-Spending":  args[2] = 0
+
+          if history_level=="New Customer":  args[3] = 1
+          elif history_level=="Standard Customer": args[3] = 0
+          elif history_level=="Long-Standing Customer": args[3] = 2
+
+          city, sale_cluster, frequency_cluster, customer_age_cluster = args
+
           before = pd.read_csv('before.csv')
           
           before = before[before['CITY']==city]
