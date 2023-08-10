@@ -165,9 +165,11 @@ with tab1:
           if total_revenue == 0:
                st.write("There are no existing customer records from these clusters")
           elif total_revenue != 0:
-
                if city=="New York City":
-                    print("Hello")
+                    card(title=str(total_revenue), text='Total Sales Revenue Generated')
+                    Improve_revenue=(total_revenue-475309.4)
+                    improvement=(total_revenue/Improve_revenue)
+                    st.metric("Total Sales Revenue",Improve_revenue,improvement)
                elif city!="New York City":
                     card(title=str(total_revenue), text='Total Sales Revenue Generated')
                     # st.metric("Total Sales Revenue",total_revenue)
