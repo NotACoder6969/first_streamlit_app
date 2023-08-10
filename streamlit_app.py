@@ -294,6 +294,7 @@ with tab1:
           
           after_dataframe = after['ORDER_AMOUNT'].sum()
           st.write('After Marketing Sales Generated')
+          st.write(after.head(10))
           st.write(f"The total Sales the year after marketing strategies is implemented is {after_dataframe}")
 
 
