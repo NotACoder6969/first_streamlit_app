@@ -174,8 +174,42 @@ with tab1:
                     else:
                          card_title = 'Total Sales Revenue Gain'
                     st.metric(card_title,Improve_revenue,improvement)
-               else:
-                    print("GAY")
+               elif city=="San Mateo":
+                    card(title=str(total_revenue), text='Total Sales Revenue Generated')
+                    Improve_revenue=(total_revenue-475309.4)
+                    improvement=(total_revenue/Improve_revenue)
+                    if Improve_revenue < 0:
+                         card_title = 'Total Sales Revenue Loss'
+                    else:
+                         card_title = 'Total Sales Revenue Gain'
+                    st.metric(card_title,Improve_revenue,improvement)
+               elif city=="Boston":
+                    card(title=str(total_revenue), text='Total Sales Revenue Generated')
+                    Improve_revenue=(total_revenue-475309.4)
+                    improvement=(total_revenue/Improve_revenue)
+                    if Improve_revenue < 0:
+                         card_title = 'Total Sales Revenue Loss'
+                    else:
+                         card_title = 'Total Sales Revenue Gain'
+                    st.metric(card_title,Improve_revenue,improvement)
+               elif city=="Seattle":
+                    card(title=str(total_revenue), text='Total Sales Revenue Generated')
+                    Improve_revenue=(total_revenue-475309.4)
+                    improvement=(total_revenue/Improve_revenue)
+                    if Improve_revenue < 0:
+                         card_title = 'Total Sales Revenue Loss'
+                    else:
+                         card_title = 'Total Sales Revenue Gain'
+                    st.metric(card_title,Improve_revenue,improvement)
+               elif city=="Denver":
+                    card(title=str(total_revenue), text='Total Sales Revenue Generated')
+                    Improve_revenue=(total_revenue-475309.4)
+                    improvement=(total_revenue/Improve_revenue)
+                    if Improve_revenue < 0:
+                         card_title = 'Total Sales Revenue Loss'
+                    else:
+                         card_title = 'Total Sales Revenue Gain'
+                    st.metric(card_title,Improve_revenue,improvement)
                print(get_bar_chart_df(*args), args)
                st.subheader("Bottom 3 Popular Menu")
                st.bar_chart(get_bar_chart_df(*args)[0], x='MENU_TYPE', y='QTY')
