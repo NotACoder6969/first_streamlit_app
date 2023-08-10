@@ -1,7 +1,7 @@
+streamlit
 snowflake-connector-python
 pandas
 numpy
 scikit-learn
 xgboost==1.7.3
-streamlit
 streamlit-card
