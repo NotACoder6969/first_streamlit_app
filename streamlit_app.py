@@ -282,7 +282,7 @@ with tab1:
           before = before[before['Customer_age_cluster']==customer_age_cluster]
           
           before_dataframe = before['ORDER_AMOUNT'].sum()
-          st.write('Before Marketing Sales Generated')
+          st.write('### Before Marketing Sales Generated')
           st.write(before.head(10).sort_values(by='ORDER_AMOUNT'))
           st.write(f"The total Sales the year before marketing strategies is {before_dataframe}")
      
