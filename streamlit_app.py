@@ -287,7 +287,7 @@ with tab1:
           st.write(before.head(10).sort_values(by='ORDER_AMOUNT', ascending=False))
           st.write(f"The total Sales the year before marketing strategies is $**{rounded_before_dataframe}**")
      
-          after = pd.read_csv('after.csv')
+          after = pd.read_csv('after_confirm.csv')
           after = after[after['CITY']==city]
           after = after[after['sale_cluster']==sale_cluster]
           after = after[after['frequency_cluster']==frequency_cluster]
